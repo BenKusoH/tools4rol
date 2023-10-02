@@ -102,10 +102,9 @@ li a:hover {
 
 .nav {
 	display: block;
-	width: 200vw;
+	width: 100%;
 	overflow: hidden;
 }
-
 
 .container {
 	display: block;
