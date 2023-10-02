@@ -3,11 +3,33 @@ body {
 	font-family: sans-serif;
 }
 
+input,
+textarea,
+select {
+margin: 10px 0 0 0;
+width: 100%;
+min-height: 2em;
+}
+
 .container {
-	margin: 20px;
+	display: block;
+	margin: 30px auto 0px auto;
+	width: 33%;
+	min-width: 400px;
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+}
+
+.inline {
+	width: unset;
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
 }
 
 h1 {
@@ -18,14 +40,11 @@ label {
 	font-weight: bold;
 }
 
-input[type="number"] {
-	width: 50px;
-	margin-right: 10px;
-}
-
 button {
+	font-size: 1.2rem;
 	margin-top: 10px;
-	padding: 5px;
+	width: 100%;
+	padding: 10px;
 	border: none;
 	background-color: #4CAF50;
 	color: white;
@@ -38,7 +57,6 @@ select {
 	border-radius: 0.25rem;
 	border: 1px solid #ccc;
 	font-size: 1rem;
-	margin: 0 0.5rem;
 }
 
 select:focus {
@@ -54,15 +72,11 @@ select:focus {
 	text-align: center;
 }
 
-
-input {
-  width: 100px !important;
-}
-
 /* CSS for navbar styling */
 nav {
 	background-color: #4CAF50;
 	padding: 10px 0;
+	min-width: 400px;
 }
 
 ul {
