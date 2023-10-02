@@ -1,24 +1,23 @@
+html {
+	font-size: 14px;
+}
+
 body {
 	margin: 0;
 	font-family: sans-serif;
 }
 
+.icon {
+	width: 20px;
+}
+
 input,
 textarea,
 select {
+	font-size: 1rem;
 margin: 10px 0 0 0;
 width: 100%;
 min-height: 2em;
-}
-
-.container {
-	display: block;
-	margin: 30px auto 0px auto;
-	width: 33%;
-	min-width: 400px;
-	padding: 20px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
 }
 
 .inline {
@@ -76,7 +75,6 @@ select:focus {
 nav {
 	background-color: #4CAF50;
 	padding: 10px 0;
-	min-width: 400px;
 }
 
 ul {
@@ -102,6 +100,23 @@ li a:hover {
 	background-color: #4c8850;
 }
 
+.nav {
+	display: block;
+	width: 200vw;
+	overflow: hidden;
+}
+
+
+.container {
+	display: block;
+	padding: 20px;
+	margin: 30px auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 90%;
+	max-width: 400px;
+}
+
 .logo {
 	display: inline-block; /* Make the logo and navbar links appear in the same line */
 	vertical-align: middle; /* Align vertically with the navbar text */
@@ -118,3 +133,8 @@ li a:hover {
 	padding-top: 30px;
 }
 
+@media only screen  and (max-width: 400px){
+	.container {
+		width: max-content;
+	}
+}
