@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Currency Converter</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/" class="logo"><img src="images/d20/dice20.png" alt="Logo"></a></li>
+			<li><a href="/" class="nav-option">Dice</a></li>
+			<li><a href="npc.html" class="nav-option">NPCs Life</a></li>
+			<li><a href="currency.html" class="nav-option">Currency Converter</a></li>
+		</ul>
+	</nav>
+
+	<div class="container currency-converter">
+		<h1>Currency Converter</h1>
+		<label for="copper">Copper pieces (CP):</label>
+		<input type="number" id="copper" value="100.00" onchange="convertCurrency('copper')">
+
+		<label for="silver">Silver pieces (SP):</label>
+		<input type="number" id="silver" value="10.00" onchange="convertCurrency('silver')">
+
+		<label for="electrum">Electrum pieces (EP):</label>
+		<input type="number" id="electrum" value="2.00" onchange="convertCurrency('electrum')">
+
+		<label for="gold">Gold pieces (GP):</label>
+		<input type="number" id="gold" value="1.00" onchange="convertCurrency('gold')">
+
+		<label for="platinum">Platinum pieces (PP):</label>
+		<input type="number" id="platinum" value="0.10" onchange="convertCurrency('platinum')">
+
+		<button class="full-width">Convert</button>
+	</div>
+
+	<script src="currency.js"></script>
+</body>
+
+</html>
