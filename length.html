@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Length Converter</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/" class="logo"><img src="images/d20/dice20.png" alt="Logo"></a></li>
+			<li><a href="/" class="nav-option">Dice</a></li>
+			<li><a href="npc.html" class="nav-option">NPCs Life</a></li>
+			<li><a href="currency.html" class="nav-option">Currency Converter</a></li>
+			<li><a href="length.html" class="nav-option">Length Converter</a></li>
+		</ul>
+	</nav>
+
+	<div class="container length">
+		<h1>Length Converter</h1>
+		<label for="feet">Feet (ft):</label>
+		<input type="number" id="feet" value="5" onchange="convertLength('feet')">
+
+		<label for="meters">Meters (m):</label>
+		<input type="number" id="meters" value="1.5240" onchange="convertLength('meters')">
+
+		<button class="full-width">Convert</button>
+	</div>
+
+	<script src="length.js"></script>
+</body>
+
+</html>

@@ -33,6 +33,14 @@ body {
 	width: 60%;
 }
 
+.length label {
+	width: 36%;
+}
+
+.length input {
+	width: 60%;
+}
+
 .icon {
 	width: 20px;
 }
