@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     card.className = 'card';
     card.innerHTML = `
       <div class="stats">
-        <label>Nombre:</label>
+        <label>Name:</label>
         <input type="text">
       </div>
       <div class="stats">
-        <label>Puntos de vida:</label>
+        <label>Life points:</label>
         <input type="number" value="100">
       </div>
       <div class="stats">
-        <label>Modificar vida:</label>
+        <label>Step:</label>
         <input type="number" value="10" id="modificar-vida-input">
       </div>
       <div class="btn-container">

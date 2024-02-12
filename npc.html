@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tracker de NPCs de D&D</title>
-  <link rel="stylesheet" type="text/css" href="npc.css">
+  <title>D&D NPC Tracker</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 </head>
 <body>
 	<nav>
 		<ul>
-		  <li><a href="index.html" class="logo"><img src="images/d20/dice20.png" alt="Logo"></a></li>
-		  <li><a href="index.html" class="nav-option">Dice</a></li>
+		  <li><a href="/" class="logo"><img src="images/d20/dice20.png" alt="Logo"></a></li>
+		  <li><a href="/" class="nav-option">Dice</a></li>
 		  <li><a href="npc.html" class="nav-option">NPCs Life</a></li>
+		  <li><a href="currency.html" class="nav-option">Currency Converter</a></li>
 		</ul>
 	</nav>
-	<h1>Tracker de NPCs de D&D</h1>
+	<h1>D&D NPC Tracker</h1>
+	<div class="container">
 
-	<button id="agregar-btn">Agregar NPC</button>
+	<button id="agregar-btn" class="full-width">Add NPC</button>
 
 	<div id="card-container"></div>
+		<div class="card">
+			<div class="stats">
+				<label>Name:</label>
+				<input type="text">
+			  </div>
+			  <div class="stats">
+				<label>Life points:</label>
+				<input type="number" value="100">
+			  </div>
+			  <div class="stats">
+				<label>Step:</label>
+				<input type="number" value="10" id="modificar-vida-input">
+			  </div>
+			  <div class="btn-container">
+				<button class="restar-btn">-</button>
+				<span class="vida">100</span>
+				<button class="sumar-btn">+</button>
+			  </div>
+		</div>
+	</div>
 
 	<script src="npc.js"></script>
 </body>

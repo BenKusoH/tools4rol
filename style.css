@@ -5,6 +5,32 @@ html {
 body {
 	margin: 0;
 	font-family: sans-serif;
+	background-color: #fafbfc;
+}
+
+.full-width {
+	width: 100%
+}
+
+.dice-rolling-game label {
+	width: 30%;
+}
+
+.dice-rolling-game input[type="number"] {
+	width: 65%;
+}
+
+.dice-rolling-game select {
+	width: 67%;
+	margin-bottom: 18px;
+}
+
+.currency-converter label {
+	width: 36%;
+}
+
+.currency-converter input {
+	width: 60%;
 }
 
 .icon {
@@ -15,9 +41,8 @@ input,
 textarea,
 select {
 	font-size: 1rem;
-margin: 10px 0 0 0;
-width: 100%;
-min-height: 2em;
+	margin: 10px 0 0 0;
+	min-height: 2em;
 }
 
 .inline {
@@ -26,23 +51,13 @@ min-height: 2em;
 	vertical-align: middle;
 }
 
-label {
-    display: block;
-    margin: 0.5rem 0;
-}
-
 h1 {
 	text-align: center;
-}
-
-label {
-	font-weight: bold;
 }
 
 button {
 	font-size: 1.2rem;
 	margin-top: 10px;
-	width: 100%;
 	padding: 10px;
 	border: none;
 	background-color: #4CAF50;
@@ -117,23 +132,58 @@ li a:hover {
 }
 
 .logo {
-	display: inline-block; /* Make the logo and navbar links appear in the same line */
-	vertical-align: middle; /* Align vertically with the navbar text */
-	margin-right: 10px; /* Add spacing between logo and navbar links */
+	display: inline-block;
+	/* Make the logo and navbar links appear in the same line */
+	vertical-align: middle;
+	/* Align vertically with the navbar text */
+	margin-right: 10px;
+	/* Add spacing between logo and navbar links */
 }
 
 .logo img {
-	width: 40px; /* Adjust the width as per your logo size */
-	height: auto; /* Maintain the aspect ratio */
-	vertical-align: middle; /* Align vertically with the navbar text */
+	width: 40px;
+	/* Adjust the width as per your logo size */
+	height: auto;
+	/* Maintain the aspect ratio */
+	vertical-align: middle;
+	/* Align vertically with the navbar text */
 }
 
 .nav-option {
 	padding-top: 30px;
 }
 
-@media only screen  and (max-width: 400px){
+@media only screen and (max-width: 400px) {
 	.container {
 		width: max-content;
 	}
+}
+
+#agregar-btn {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.card {
+	background-color: #f7f7f7;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	padding: 16px;
+	margin: 0px 0px 20px 0px;
+	border-radius: 5px;
+}
+
+.stats>input {
+	width: 65%;
+}
+
+.stats>label {
+	width: 30%;
+}
+
+label {
+	display: inline-block
 }
